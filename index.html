@@ -1,30 +1,32 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina web de Instituto Maria Auxiliadora Bahia Blanca, imabahiablanca.">
+    <meta name="keywords" content="instituto superior, Maria Auxiliadora, profesorado inicial, tecnicatura en trabajo social, trabajo social, inicial, ima, imabahiablanca">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./images/logo.jpg">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Instituto Superior María Auxiliadora</title>
+    <title>Instituto Superior Mar&iacute;a Auxiliadora</title>
 </head>
 <body>
     <header>
         <nav>
-            <a href="./index.html">Inicio</a>
+            <a href="https://imasigema.com/" target="_blank">IMASIGEMA</a>
+            <a href="/pages/noticias.html">Noticias</a>
             <a href="#carreras">Carreras</a>
             <a href="#servicios">Servicios</a>
-            <a href="#galeria">Galería</a>
+            <a href="#galeria">Galer&iacute;a</a>
             <a href="#contacto">Contacto</a>
         </nav>
         <section class="textos-header">
             <div data-aos="fade-up" data-aos-duration="3000">
-                <h1>Instituto Superior María Auxiliadora</h1>
+                <h1>Instituto Superior Mar&iacute;a Auxiliadora</h1>
                 <h2>Bahía Blanca</h2>
             </div>
         </section>
@@ -37,8 +39,22 @@
         </div>
     </header>
     <main>
+        <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+            <div class="contenido-textos sobre-nosotros-parrafo">
+                <h3 class="titulo">Sobre nosotros</h3>
+                <p>
+                    Nuestra propuesta educativa nace hace unos 150 años, siguiendo el sueño de la inclusión y la igualdad
+                    de oportunidades para la juventud.
+                </p>
+            </div>
+        </div>
+        
+        <div class="hr"></div>
+
         <section class="contenedor sobre-nosotros">
-            <h2 id="carreras" class="titulo">Presentación de carreras</h2>
+            <h2 id="carreras" class="titulo">Presentaci&oacute;n de carreras</h2>
             <div class="contenedor-sobre-nosotros">
                 <img src="/images/portada2.jpg" alt="" class="imagen-about-us">
                 <iframe class="imagen-about-us" src="https://www.youtube.com/embed/MnzJceT8xqQ"
@@ -61,51 +77,75 @@
                 <h2 id="galeria" class="titulo">Galería</h2>
                 <div class="galeria-port">
                     <div class="imagen-port">
-                        <img src="/images/img1.jpg" alt="galeria1">
-                        <div class="hover-galeria">
-                            <p>¡Te esperamos!</p>
+                        <img  id="myImg" src="/images/img1.jpg" alt="galeria1" style="width:100%;max-width:300px">
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="/images/img2.jpg" alt="galeria2">
-                        <div class="hover-galeria">
-                            <p>¡Te esperamos!</p>
+                        <img  id="myImg2" src="/images/img2.jpg" alt="galeria2" style="width:100%;max-width:300px">
+                        <!-- The Modal2 -->
+                        <div id="myModal2" class="modal2">
+                            <span class="close2">&times;</span>
+                            <img class="modal-content2" id="img2">
+                            <div id="caption2"></div>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="/images/img3.jpg" alt="galeria3">
-                        <div class="hover-galeria">
-                            <p>¡Te esperamos!</p>
+                        <img  id="myImg3" src="/images/img3.jpg" alt="galeria3" style="width:100%;max-width:300px">
+                        <!-- The Modal3 -->
+                        <div id="myModal3" class="modal3">
+                            <span class="close3">&times;</span>
+                            <img class="modal-content3" id="img3">
+                            <div id="caption3"></div>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="/images/img4.jpg" alt="galeria4">
-                        <div class="hover-galeria">
-                            <p>¡Te esperamos!</p>
+                        <img  id="myImg4" src="/images/img4.jpg" alt="galeria4" style="width:100%;max-width:300px">
+                        <!-- The Modal4 -->
+                        <div id="myModal4" class="modal4">
+                            <span class="close4">&times;</span>
+                            <img class="modal-content4" id="img4">
+                            <div id="caption4"></div>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="/images/img5.jpg" alt="galeria5">
-                        <div class="hover-galeria">
-                            <p>¡Te esperamos!</p>
+                        <img  id="myImg5" src="/images/img5.jpg" alt="galeria5" style="width:100%;max-width:300px">
+                        <!-- The Modal5 -->
+                        <div id="myModal5" class="modal5">
+                            <span class="close5">&times;</span>
+                            <img class="modal-content5" id="img5">
+                            <div id="caption5"></div>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="/images/img6.jpg" alt="galeria6">
-                        <div class="hover-galeria">
-                            <p>¡Te esperamos!</p>
+                        <img  id="myImg6" src="/images/img6.jpg" alt="galeria6" style="width:100%;max-width:300px">
+                        <!-- The Modal6 -->
+                        <div id="myModal6" class="modal6">
+                            <span class="close6">&times;</span>
+                            <img class="modal-content6" id="img6">
+                            <div id="caption6"></div>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="/images/img7.jpg" alt="galeria7">
-                        <div class="hover-galeria">
-                            <p>¡Te esperamos!</p>
+                        <img  id="myImg7" src="/images/img7.jpg" alt="galeria7" style="width:100%;max-width:300px">
+                        <!-- The Modal7 -->
+                        <div id="myModal7" class="modal7">
+                            <span class="close7">&times;</span>
+                            <img class="modal-content7" id="img7">
+                            <div id="caption7"></div>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="/images/img8.jpg" alt="galeria8">
-                        <div class="hover-galeria">
-                            <p>¡Te esperamos!</p>
+                        <img  id="myImg8" src="/images/img8.jpg" alt="galeria8"  style="width:100%;max-width:300px">
+                        <!-- The Modal8 -->
+                        <div id="myModal8" class="modal8">
+                            <span class="close8">&times;</span>
+                            <img class="modal-content8" id="img8">
+                            <div id="caption8"></div>
                         </div>
                     </div>
                 </div>
@@ -166,6 +206,10 @@
                 </div>
             </div>
         </section>
+
+        <div id="titulo-imasigema-main" class="contenido-textos sobre-nosotros-parrafo">
+            <a class="titulo-imasigema-main" href="https://imasigema.com/" target="_blank"><h3 class="titulo titulo-imasigema-main">IMASIGEMA</h3></a>
+        </div>
     </main>
 
     <section id="contacto" class="form-padre">
@@ -181,14 +225,29 @@
     </section>
 
     <footer>
+        <div class="contenedor-footer-1">
+            <div class="content-foo">                
+                <a href="https://www.facebook.com/Nivel-Superior-Mar%C3%ADa-Auxiliadora-B-Bca-387260881997405/?ref=page_internal" target="_blank"><img src="./images/facebook-logo.png" alt="facebook-de-maria-auxiliadora-bahia-blanca"></a>
+                <p>Facebook - IMA Bahía Blanca</p>
+            </div>
+            <div class="content-foo-1">                
+                <a href="https://www.instagram.com/ima.superior.bbca/" target="_blank"><img src="./images/instagram-logo.png" alt="instagram-de-maria-auxiliadora-bahia-blanca"></a>
+                <p>Instagram - IMA Bahía Blanca</p>
+            </div>
+            <div class="content-foo-1">
+                <img src="./images/gmail-logo.png" alt="gmail">
+                <p>nivelsuperiorimabb@hmaabb.org</p>
+            </div>
+        </div>
+
         <div class="contenedor-footer">
             <div class="content-foo">
                 <h4>Tel</h4>
                 <p>2914558498 - de 17 a 20hs</p>
             </div>
             <div class="content-foo">
-                <h4>Email</h4>
-                <p>alumnossuperiorima@hmaabb.org</p>
+                <h4>Email alumnos</h4>
+                <p>alumnossuperiorima@mariaauxiliadora.org.ar</p>
             </div>
             <div class="content-foo">
                 <h4>Nos encontrarás en</h4>
@@ -197,10 +256,12 @@
         </div>
         <h4 class="titulo-final">&copy;Web design: Martin E. Morales 2022</h4>
     </footer>
-    
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-        </script>
+    </script>
+    
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
